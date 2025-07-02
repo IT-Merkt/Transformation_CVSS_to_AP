@@ -1,0 +1,28 @@
+model,date,epochs,batch_size,accumulation_steps,learning_rate,exact_match,token_similarity,semantic_similarity,f1_ap,f1_risk,ap_factor_acc,risk_consistency,tara_validity,gpt_score,deepseek_score,worked_best,worked_worst
+mistral-7b-lora_wo-prompt,2025-06-01 17:05,15,4,2,2e-05,0.0,0.3148975,0.870355,,,,,,,,,
+mistral-7b-lora,2025-06-02 15:03,15+10,4,2,2e-05,0.0,0.3650275,0.6740425,,,,,,7.0,6.5,Structured format-consistent inclusion of TARA elements,Misinterpretation of CVSS → AP mappings (e.g. expertise-knowledge)
+deepseek-CoderV2_Lite,2025-06-03 21:31,15+10,4,2,2e-05,0.0,0.221855,0.67404253,,,,,,3.0,4.1,output structure – Basic CVSS metric parsing,Ignoring vulnerability descriptions – TARA impact negligence – Over-reliance on CVSS without contextual analysis.
+deepseek-CoderV2_Lite,2025-06-04 22:25,15+10,4,2,2e-05,0.0,0.20917250000000004,0.6740425,,,,,,,,,
+Llama-2-7b-chat-hf,2025-06-05 00:19,15+10,4,2,2e-05,0.0,0.0383825,0.55634,,,0.74,0.0,1.0,,,,
+Yi-1.5-6B-Chat,2025-06-06 01:26,15+10,4,2,2e-05,0.0,0.030037500000000005,0.5156975,,,0.795,0.0,1.0,,,,
+Mistral-7B-Instruct-v0.3,2025-06-07 02:43,15+10,4,2,2e-05,0.0,0.0309225,0.538,,,0.795,0.0,0.975,,,,
+Yi-1.5-9B-Chat,2025-06-08 04:19,15+10,4,2,2e-05,0.0,0.0259275,0.538325,,,0.775,0.0,1.0,,,,
+deepseek-coder-6.7B-instruct,2025-06-09 05:33,15+10,4,2,2e-05,0.0,0.025582499999999998,0.5330925,,,0.79,0.0,0.975,,,,
+Meta-Llama-3.1-8B-Instruct,2025-06-10 06:38,15+10,4,2,2e-05,0.0,0.029845,0.5713025,,,0.765,0.0,0.975,,,,
+gemma-1.1-7b-it,2025-06-11 13:40,15+10,2,2,2e-05,0.0,0.030482500000000003,0.5267799999999999,,,0.8,0.0,1.0,,,,
+Llama-2-7b-chat-hf,2025-06-12 18:15,30+25,4,2,2e-05,0.0,0.15728499999999998,0.556248,0.1453100158982512,0.17307692307692307,0.75,0.0,1.0,3,2.9, always prints full AP/TARA template,wrong AP numbers & risk mapping.
+Yi-1.5-6B-Chat,2025-06-13 18:22,30+25,4,2,2e-05,0.0,0.06757500000000001,0.57268,0.1453100158982512,0.17307692307692307,0.535,0.075,0.975,1.7,2.6,impressive results in one or two examples, repeated the prompt and failed to answer
+Mistral-7B-Instruct-v0.3,2025-06-14 18:30,30+25,4,2,2e-05,0.0,0.17487750000000002,0.589036245,0.1453100158982512,0.17307692307692307,0.7849999999999999,0.05,1.0,4,5,Outputs are structured and parsable (Clarity 7/10),AP & risk mapping inaccurate - over-reliance on CVSS metrics and ignoring descriptions
+Yi-1.5-9B-Chat,2025-06-15 18:41,30+25,4,2,2e-05,0.0,0.08222,0.563011,0.1470925470925471,0.17307692307692307,0.675,0.1,1.0,4,2.5,Produces the full ISO 21434/TARA template every time,Maps CVSS → AP values incorrectly - so risk results are wrong
+deepseek-coder-6.7B-instruct,2025-06-16 18:48,30+25,4,2,2e-05,0.0,0.1064375,0.548,0.1453100158982512,0.17307692307692307,0.675,0.15,1.0,1,2,a few examples showed moderate success- up to a score of 4/10 ,chaotic reasoning- and invented impact ratings- CVSS data was consistently misused or ignored.
+Meta-Llama-3.1-8B-Instruct,2025-06-17 18:56,30+25,4,2,2e-05,0.0,0.09886,0.5570705,0.1453100158982512,0.17307692307692307,0.43000000000000005,0.15,0.975,3,4,Formatting / headings and Completeness,Impact-Risk mapping - poor reasoning
+gemma-1.1-7b-it,2025-06-18 19:07,30+25,2,2,2e-05,0.0,0.0676,0.571164354,0.1453100158982512,0.17307692307692307,0.5650000000000001,0.05,1.0,2.3,2.8,Occasionally correct CVSS mappings,factor accuracy & mapping
+Llama-2-7b-chat-hf,2025-06-19 14:54,8+6,4,2,2e-05,0.0,0.121095,0.55502439,0.1453100158982512,0.17307692307692307,0.6100000000000001,0.1,1.0,3,4.1,always produces the required section headers,mis-maps AP factors and risk matrix
+Yi-1.5-6B-Chat,2025-06-20 15:01,8+6,4,2,2e-05,0.0,0.0651025,0.528826,0.1453100158982512,0.17307692307692307,0.665,0.1,0.95,2,2,always prints the requested headings,mis-computes AP & risk; reasoning inconsistent
+Mistral-7B-Instruct-v0.3,2025-06-21 15:06,8+6,4,2,2e-05,0.0,0.1392525,0.5940199,0.1453100158982512,0.17307692307692307,0.79,0.0,1.0,4,5,Completeness (10/10) – TARA/AP sections always included,Accuracy (avg. 3/10) and Reasoning (avg. 4/10)
+Yi-1.5-9B-Chat,2025-06-22 15:17,8+6,4,2,2e-05,0.0,0.0877675,0.5600032,0.1453100158982512,0.17307692307692307,0.37,0.075,1.0,2,4,always outputs the five AP factors,Accuracy of AP factors (2.75) and reasoning quality (2.1) are critically flawed
+deepseek-coder-6.7B-instruct,2025-06-23 15:24,8+6,4,2,2e-05,0.0,0.12117,0.532183,0.1470925470925471,0.17307692307692307,0.8,0.025,1.0,2,3.3,Output structure and completeness (AP + TARA always present),Accuracy of AP factors and reasoning quality
+Meta-Llama-3.1-8B-Instruct,2025-06-24 15:31,8+6,4,2,2e-05,0.0,0.1063075,0.54664582,0.17451612903225805,0.17307692307692307,0.7849999999999999,0.075,1.0,5,4.5,clear - consistent formatting - Completeness (avg: 8.7/10), Accuracy of factors (avg: 2.9/10)
+gemma-1.1-7b-it,2025-06-25 15:46,8+6,2,2,2e-05,0.0,0.05475,0.5253571,0.1453100158982512,0.17307692307692307,0.755,0.125,0.7,1.75,2,Attempts to include all TARA domains,mis-maps AP & risk - verbose noise
+Mistral-Nemo-Instruct-2407,2025-06-26 00:37,7+5,2,2,2e-05,0.0,0.1541725,0.60106,0.1548076923076923,0.17307692307692307,0.725,0.0,1.0,4,6,clear - structured format - TARA outputs present,wrong AP factors & risk mapping
+Mistral-Small-Instruct-2409,2025-06-27 05:51,5+4,1,2,2e-05,0.0,0.15228000000000003,0.6068,0.19737704918032786,0.17307692307692307,0.735,0.75,1.0,4,4,Outputs are structured and parsable,AP maths & VA→Risk mapping

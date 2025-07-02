@@ -1,0 +1,4342 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        tr:hover { background-color: #eef; }
+        .high { background-color: #c8e6c9; }
+        .low { background-color: #ffcdd2; }
+        .notes { max-width: 300px; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>CVSS → Attack Potential Evaluation Report</h1>
+    <p>Alle bisherigen Evaluationen mit Trainingsparametern und Qualitätsmetriken.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                
+                <th>model</th>
+                
+                <th>date</th>
+                
+                <th>epochs</th>
+                
+                <th>batch_size</th>
+                
+                <th>accumulation_steps</th>
+                
+                <th>learning_rate</th>
+                
+                <th>exact_match</th>
+                
+                <th>token_similarity</th>
+                
+                <th>semantic_similarity</th>
+                
+                <th>f1_ap</th>
+                
+                <th>f1_risk</th>
+                
+                <th>ap_factor_acc</th>
+                
+                <th>risk_consistency</th>
+                
+                <th>tara_validity</th>
+                
+                <th>gpt_score</th>
+                
+                <th>deepseek_score</th>
+                
+                <th>worked_best</th>
+                
+                <th>worked_worst</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    mistral-7b-lora_wo-prompt
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-01 17:05
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.3148975
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.870355
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    mistral-7b-lora
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-02 15:03
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.3650275
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.6740425
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    7.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    6.5
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Structured format-consistent inclusion of TARA elements
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Misinterpretation of CVSS → AP mappings (e.g. expertise-knowledge)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    deepseek-CoderV2_Lite
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-03 21:31
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.221855
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.67404253
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    3.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.1
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    output structure – Basic CVSS metric parsing
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Ignoring vulnerability descriptions – TARA impact negligence – Over-reliance on CVSS without contextual analysis.
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    deepseek-CoderV2_Lite
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-04 22:25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.2091725
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.6740425
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Llama-2-7b-chat-hf
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-05 00:19
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0383825
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.55634
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.74
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-6B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-06 01:26
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0300375
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5156975
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.795
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Mistral-7B-Instruct-v0.3
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-07 02:43
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0309225
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.538
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.795
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.975
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-9B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-08 04:19
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0259275
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.538325
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.775
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    deepseek-coder-6.7B-instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-09 05:33
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0255824999999999
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5330925
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.79
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.975
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Meta-Llama-3.1-8B-Instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-10 06:38
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.029845
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5713025
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.765
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.975
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    gemma-1.1-7b-it
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-11 13:40
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    15+10
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0304825
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5267799999999999
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.8
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    N/A
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Llama-2-7b-chat-hf
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-12 18:15
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1572849999999999
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.556248
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.75
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    3.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.9
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                     always prints full AP/TARA template
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    wrong AP numbers & risk mapping.
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-6B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-13 18:22
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.067575
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.57268
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.535
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.075
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.975
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.7
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.6
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    impressive results in one or two examples
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                     repeated the prompt and failed to answer
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Mistral-7B-Instruct-v0.3
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-14 18:30
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1748775
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.589036245
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.7849999999999999
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.05
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    5.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Outputs are structured and parsable (Clarity 7/10)
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    AP & risk mapping inaccurate - over-reliance on CVSS metrics and ignoring descriptions
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-9B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-15 18:41
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.08222
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.563011
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1470925470925471
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.675
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.5
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Produces the full ISO 21434/TARA template every time
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Maps CVSS → AP values incorrectly - so risk results are wrong
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    deepseek-coder-6.7B-instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-16 18:48
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1064375
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.548
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.675
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.15
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    a few examples showed moderate success- up to a score of 4/10 
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    chaotic reasoning- and invented impact ratings- CVSS data was consistently misused or ignored.
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Meta-Llama-3.1-8B-Instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-17 18:56
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.09886
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5570705
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.43
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.15
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.975
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    3.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Formatting / headings and Completeness
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Impact-Risk mapping - poor reasoning
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    gemma-1.1-7b-it
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-18 19:07
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    30+25
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0676
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.571164354
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5650000000000001
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.05
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.3
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.8
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Occasionally correct CVSS mappings
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    factor accuracy & mapping
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Llama-2-7b-chat-hf
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-19 14:54
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.121095
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.55502439
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.6100000000000001
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    3.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.1
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    always produces the required section headers
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    mis-maps AP factors and risk matrix
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-6B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-20 15:01
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0651025
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.528826
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.665
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.95
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    always prints the requested headings
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    mis-computes AP & risk; reasoning inconsistent
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Mistral-7B-Instruct-v0.3
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-21 15:06
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1392525
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5940199
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.79
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    5.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Completeness (10/10) – TARA/AP sections always included
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Accuracy (avg. 3/10) and Reasoning (avg. 4/10)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Yi-1.5-9B-Chat
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-22 15:17
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0877675
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5600032
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.37
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.075
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    always outputs the five AP factors
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Accuracy of AP factors (2.75) and reasoning quality (2.1) are critically flawed
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    deepseek-coder-6.7B-instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-23 15:24
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.12117
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.532183
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1470925470925471
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    0.8
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.025
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    3.3
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Output structure and completeness (AP + TARA always present)
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Accuracy of AP factors and reasoning quality
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Meta-Llama-3.1-8B-Instruct
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-24 15:31
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1063075
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.54664582
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.174516129032258
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.7849999999999999
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.075
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    5.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.5
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    clear - consistent formatting - Completeness (avg: 8.7/10)
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                     Accuracy of factors (avg: 2.9/10)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    gemma-1.1-7b-it
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-25 15:46
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    8+6
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.05475
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.5253571
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1453100158982512
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.755
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.125
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.7
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.75
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    2.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Attempts to include all TARA domains
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    mis-maps AP & risk - verbose noise
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Mistral-Nemo-Instruct-2407
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-26 00:37
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    7+5
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1541725
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.60106
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1548076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.725
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    6.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    clear - structured format - TARA outputs present
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    wrong AP factors & risk mapping
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                    
+                <td class="
+                    
+                ">
+                    Mistral-Small-Instruct-2409
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2025-06-27 05:51
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    5+4
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    1
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    2e-05
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.0
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.15228
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.6068
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.1973770491803278
+                </td>
+                
+                
+                    
+                <td class="
+                    low
+                    
+                ">
+                    0.173076923076923
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.735
+                </td>
+                
+                
+                    
+                <td class="
+                    
+                ">
+                    0.75
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    1.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    high
+                    
+                ">
+                    4.0
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    Outputs are structured and parsable
+                </td>
+                
+                
+                    
+                <td class="
+                    notes
+                    
+                ">
+                    AP maths & VA→Risk mapping
+                </td>
+                
+                
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>Score-Entwicklung über Zeit</h2>
+    
+        
+        <h3>token_similarity</h3>
+        <img src="plot_token_similarity.png" style="width:600px;">
+        
+    
+        
+        <h3>semantic_similarity</h3>
+        <img src="plot_semantic_similarity.png" style="width:600px;">
+        
+    
+        
+        <h3>exact_match</h3>
+        <img src="plot_exact_match.png" style="width:600px;">
+        
+    
+        
+        <h3>gpt_score</h3>
+        <img src="plot_gpt_score.png" style="width:600px;">
+        
+    
+        
+        <h3>deepseek_score</h3>
+        <img src="plot_deepseek_score.png" style="width:600px;">
+        
+    
+        
+        <h3>f1_ap</h3>
+        <img src="plot_f1_ap.png" style="width:600px;">
+        
+    
+        
+        <h3>f1_risk</h3>
+        <img src="plot_f1_risk.png" style="width:600px;">
+        
+    
+        
+        <h3>ap_factor_acc</h3>
+        <img src="plot_ap_factor_acc.png" style="width:600px;">
+        
+    
+        
+        <h3>risk_consistency</h3>
+        <img src="plot_risk_consistency.png" style="width:600px;">
+        
+    
+        
+        <h3>tara_validity</h3>
+        <img src="plot_tara_validity.png" style="width:600px;">
+        
+    
+</body>
+</html>
