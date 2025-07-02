@@ -1,0 +1,39 @@
+runs:
+  - name: llama2_7b
+    base: meta-llama/Llama-2-7b-chat-hf
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: yi_6b
+    base: 01-ai/Yi-1.5-6B-Chat
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: mistral_7b_0.3
+    base: mistralai/Mistral-7B-Instruct-v0.3
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: yi_9b
+    base: 01-ai/Yi-1.5-9B-Chat
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: deepseek_coder_6b
+    base: deepseek-ai/deepseek-coder-6.7B-instruct
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  # “reference” larger checkpoints
+  - name: llama3_8b
+    base: meta-llama/Meta-Llama-3.1-8B-Instruct
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: gemma_7b
+    base: google/gemma-1.1-7b-it
+    epochs_cvss31: 8
+    epochs_cvss40: 6
+  - name: mistral_Nemo_12B
+    base: mistralai/Mistral-Nemo-Instruct-2407
+    epochs_cvss31: 7
+    epochs_cvss40: 5
+  - name: mistral_Small_24B
+    base: mistralai/Mistral-Small-Instruct-2409
+    epochs_cvss31: 5
+    epochs_cvss40: 4
+
